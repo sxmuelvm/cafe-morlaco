@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú · Café Morlaco</title>
+<meta name="description" content="Catálogo completo de Café Morlaco en Cuenca: cafés, postres, sánduches, aperitivos y chocolates artesanales, con precios de referencia.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="Menú · Café Morlaco">
+<meta property="og:description" content="Cafés, postres, sánduches, aperitivos y chocolates artesanales en Cuenca.">
+<meta property="og:image" content="https://images.pexels.com/photos/7859827/pexels-photo-7859827.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__brand">
+      <svg class="nav__mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#B5502F"/>
+        <path d="M16 26h26v14a10 10 0 0 1-10 10H26a10 10 0 0 1-10-10V26z" fill="#F6EFE4"/>
+        <path d="M42 29h3.5a6 6 0 0 1 0 12H42v-4h3.5a2 2 0 0 0 0-4H42v-4z" fill="#F6EFE4"/>
+        <path d="M22 16c0 2-2 2-2 4M29 16c0 2-2 2-2 4M36 16c0 2-2 2-2 4" stroke="#F6EFE4" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="nav__wordmark">Café <em>Morlaco</em></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <button class="nav__close" id="navClose" aria-label="Cerrar menú">&times;</button>
+      <a href="../index.html">Inicio</a>
+      <a href="../nosotros/index.html">Nosotros</a>
+      <a href="../menu/index.html" class="active">Menú</a>
+      <a href="../visitanos/index.html">Visítanos</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero--small">
+  <img class="hero__bg" src="https://images.pexels.com/photos/7859827/pexels-photo-7859827.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Café con arte latte junto a una ventana" width="1920" height="1280">
+  <div class="hero__scrim"></div>
+  <div class="hero__content">
+    <span class="eyebrow">Nuestro catálogo</span>
+    <h1>Todo lo que servimos, de la taza al chocolate</h1>
+  </div>
+</section>
+
+<section class="bg-surface" style="padding-top:48px;">
+  <div class="container">
+
+    <div class="menu-tabs" role="tablist" aria-label="Categorías del menú">
+      <a href="#cafes" class="active">Cafés</a>
+      <a href="#postres">Postres</a>
+      <a href="#sanduches">Sánduches</a>
+      <a href="#aperitivos">Aperitivos</a>
+      <a href="#chocolates">Chocolates</a>
+    </div>
+
+    <!-- CAFÉS -->
+    <div class="menu-category" id="cafes">
+      <div class="menu-category__head">
+        <img src="https://images.pexels.com/photos/7859827/pexels-photo-7859827.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Taza de café con arte latte junto a una ventana" width="800" height="600" loading="lazy">
+        <div>
+          <span class="eyebrow">Cafés</span>
+          <h2>Grano ecuatoriano, tueste de casa</h2>
+          <p style="color:var(--color-text-muted); margin-top:10px;">Trabajamos café de altura de productores nacionales, molido al momento para cada preparación.</p>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-item">
+          <div><div class="menu-item__name">Espresso</div><div class="menu-item__desc">Doble, extraído al momento</div></div>
+          <div class="menu-item__price">$1.80</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Americano</div><div class="menu-item__desc">Espresso alargado con agua caliente</div></div>
+          <div class="menu-item__price">$2.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Café pasado morlaco</div><div class="menu-item__desc">Filtro lento, grano de altura de Loja</div></div>
+          <div class="menu-item__price">$2.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Café con leche tradicional</div><div class="menu-item__desc">Como en casa, bien caliente</div></div>
+          <div class="menu-item__price">$2.20</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Cappuccino</div><div class="menu-item__desc">Espuma cremosa, canela opcional</div></div>
+          <div class="menu-item__price">$2.80</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Latte</div><div class="menu-item__desc">Suave, con arte latte de casa</div></div>
+          <div class="menu-item__price">$3.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Flat white</div><div class="menu-item__desc">Doble shot, leche vaporizada fina</div></div>
+          <div class="menu-item__price">$3.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Mocha</div><div class="menu-item__desc">Espresso, chocolate Nacional y leche</div></div>
+          <div class="menu-item__price">$3.20</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Cold brew</div><div class="menu-item__desc">Extracción en frío, 18 horas</div></div>
+          <div class="menu-item__price">$3.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Affogato</div><div class="menu-item__desc">Espresso caliente sobre helado de vainilla</div></div>
+          <div class="menu-item__price">$3.80</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POSTRES -->
+    <div class="menu-category" id="postres">
+      <div class="menu-category__head">
+        <img src="https://images.unsplash.com/photo-1514435390218-898a0e01517a?auto=format&fit=crop&w=800&q=80" alt="Porción de torta servida en plato" width="800" height="600" loading="lazy">
+        <div>
+          <span class="eyebrow">Postres</span>
+          <h2>Dulces de casa, algunos muy cuencanos</h2>
+          <p style="color:var(--color-text-muted); margin-top:10px;">Horneamos todos los días; el higo con queso es nuestra receta más pedida.</p>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-item">
+          <div><div class="menu-item__name">Higos con queso</div><div class="menu-item__desc">Postre típico cuencano, con queso fresco</div></div>
+          <div class="menu-item__price">$3.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Cheesecake de maracuyá</div><div class="menu-item__desc">Base de galleta, coulis de la casa</div></div>
+          <div class="menu-item__price">$3.80</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Brownie con helado</div><div class="menu-item__desc">Chocolate amargo, bola de vainilla</div></div>
+          <div class="menu-item__price">$4.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Tres leches</div><div class="menu-item__desc">Receta de familia, bien húmeda</div></div>
+          <div class="menu-item__price">$3.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Alfajores morlacos (x3)</div><div class="menu-item__desc">Manjar de leche, coco rallado</div></div>
+          <div class="menu-item__price">$2.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Pie de manzana</div><div class="menu-item__desc">Tibio, con canela</div></div>
+          <div class="menu-item__price">$3.60</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SÁNDUCHES -->
+    <div class="menu-category" id="sanduches">
+      <div class="menu-category__head">
+        <img src="https://images.unsplash.com/photo-1608330557791-8dff6a434bbf?auto=format&fit=crop&w=800&q=80" alt="Sánduche servido en plato" width="800" height="600" loading="lazy">
+        <div>
+          <span class="eyebrow">Sánduches</span>
+          <h2>Pan del día, rellenos generosos</h2>
+          <p style="color:var(--color-text-muted); margin-top:10px;">Horneamos el pan cada mañana; todos se sirven con una guarnición pequeña.</p>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-item">
+          <div><div class="menu-item__name">Sánduche de chancho morlaco</div><div class="menu-item__desc">Pernil al horno, encurtido de cebolla</div></div>
+          <div class="menu-item__price">$5.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Club sándwich</div><div class="menu-item__desc">Pollo, tocino, tomate y lechuga</div></div>
+          <div class="menu-item__price">$6.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Caprese</div><div class="menu-item__desc">Tomate, albahaca fresca, mozzarella</div></div>
+          <div class="menu-item__price">$5.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Pollo a la plancha</div><div class="menu-item__desc">Con vegetales asados y mostaza de casa</div></div>
+          <div class="menu-item__price">$5.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Tostado de jamón y queso</div><div class="menu-item__desc">Clásico, para acompañar el café</div></div>
+          <div class="menu-item__price">$4.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Vegetariano</div><div class="menu-item__desc">Palta, vegetales asados, hummus</div></div>
+          <div class="menu-item__price">$5.00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- APERITIVOS -->
+    <div class="menu-category" id="aperitivos">
+      <div class="menu-category__head">
+        <img src="https://images.pexels.com/photos/37102326/pexels-photo-37102326/free-photo-of-fresh-empanadas-ready-for-outdoor-cooking.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Empanadas recién hechas" width="800" height="600" loading="lazy">
+        <div>
+          <span class="eyebrow">Aperitivos</span>
+          <h2>Para picar entre conversación y conversación</h2>
+          <p style="color:var(--color-text-muted); margin-top:10px;">Ideales para compartir a media tarde, con una cerveza o un café bien cargado.</p>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-item">
+          <div><div class="menu-item__name">Empanadas de viento (x2)</div><div class="menu-item__desc">Queso, fritas al momento, con azúcar</div></div>
+          <div class="menu-item__price">$3.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Tabla morlaca</div><div class="menu-item__desc">Quesos, embutidos y aceitunas para compartir</div></div>
+          <div class="menu-item__price">$8.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Patacones con salsa de maní</div><div class="menu-item__desc">Verde frito, salsa de casa</div></div>
+          <div class="menu-item__price">$4.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Croquetas de choclo</div><div class="menu-item__desc">Con queso, servidas con ají</div></div>
+          <div class="menu-item__price">$4.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Tostadas con aguacate</div><div class="menu-item__desc">Pan de casa, rabanito, limón</div></div>
+          <div class="menu-item__price">$4.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Papas nativas con dip de la casa</div><div class="menu-item__desc">Variedad andina, salsa de hierbas</div></div>
+          <div class="menu-item__price">$4.20</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHOCOLATES -->
+    <div class="menu-category" id="chocolates">
+      <div class="menu-category__head">
+        <img src="https://images.unsplash.com/photo-1638194645412-1d0b4c53ffed?auto=format&fit=crop&w=800&q=80" alt="Barra de chocolate artesanal con cacao" width="800" height="600" loading="lazy">
+        <div>
+          <span class="eyebrow">Chocolates</span>
+          <h2>Cacao Nacional, hecho a mano</h2>
+          <p style="color:var(--color-text-muted); margin-top:10px;">Trabajamos cacao fino de aroma ecuatoriano, transformado en pequeños lotes.</p>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-item">
+          <div><div class="menu-item__name">Barra 70% cacao Nacional</div><div class="menu-item__desc">Amargo, notas frutales</div></div>
+          <div class="menu-item__price">$4.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Trufas artesanales (x4)</div><div class="menu-item__desc">Surtido de la casa</div></div>
+          <div class="menu-item__price">$5.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Chocolate caliente tradicional</div><div class="menu-item__desc">Espeso, como en la sierra</div></div>
+          <div class="menu-item__price">$3.00</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Brownie de chocolate amargo</div><div class="menu-item__desc">Denso, para compartir</div></div>
+          <div class="menu-item__price">$3.80</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Bombones rellenos (x6)</div><div class="menu-item__desc">Caja para regalo o antojo</div></div>
+          <div class="menu-item__price">$6.50</div>
+        </div>
+        <div class="menu-item">
+          <div><div class="menu-item__name">Mazapán de cacao</div><div class="menu-item__desc">Receta de casa, textura suave</div></div>
+          <div class="menu-item__price">$3.20</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="menu-note">Los precios son de referencia y están sujetos a confirmación por parte de Café Morlaco. Algunos productos pueden variar según disponibilidad de temporada.</p>
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container" style="max-width:640px; text-align:center;">
+    <h2>¿Ya sabes qué pedir?</h2>
+    <p>Te esperamos en Calle Larga — o usa la burbuja de WhatsApp para reservar mesa o pedir para llevar.</p>
+    <div class="btn-row">
+      <a href="../visitanos/index.html" class="btn btn-secondary">Cómo llegar</a>
+      <a href="../nosotros/index.html" class="btn btn-secondary">Conoce nuestra historia</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <div class="footer__brand-wordmark">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#B5502F"/>
+        <path d="M16 26h26v14a10 10 0 0 1-10 10H26a10 10 0 0 1-10-10V26z" fill="#F6EFE4"/>
+        <path d="M42 29h3.5a6 6 0 0 1 0 12H42v-4h3.5a2 2 0 0 0 0-4H42v-4z" fill="#F6EFE4"/>
+        <path d="M22 16c0 2-2 2-2 4M29 16c0 2-2 2-2 4M36 16c0 2-2 2-2 4" stroke="#F6EFE4" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg>
+        Café Morlaco
+      </div>
+      <p>Café de barrio en una casa de doscientos años, en el corazón del Centro Histórico de Cuenca.</p>
+    </div>
+    <div class="footer__links">
+      <h3>Explorar</h3>
+      <a href="../index.html">Inicio</a>
+      <a href="../nosotros/index.html">Nosotros</a>
+      <a href="../menu/index.html">Menú</a>
+      <a href="../visitanos/index.html">Visítanos</a>
+    </div>
+    <div class="footer__contact">
+      <h3>Contacto</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Calle Larga 7-70 y Luis Cordero, Centro Histórico, Cuenca, Ecuador</p>
+      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/593991234567" target="_blank" rel="noopener noreferrer">+593 99 123 4567</a></p>
+      <p><i class="fa-regular fa-clock"></i> Lun–Sáb 8:00–20:00 · Dom 9:00–18:00</p>
+    </div>
+    <div>
+      <h3>Síguenos</h3>
+      <div class="footer__social-icons">
+        <a href="https://facebook.com/cafemorlaco" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Café Morlaco"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com/cafemorlaco" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Café Morlaco"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@cafemorlaco" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Café Morlaco"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__bottom-inner">
+      <span>© 2026 Café Morlaco. Cuenca, Ecuador.</span>
+      <span>Calle Larga 7-70 y Luis Cordero</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/593991234567?text=Hola%20Caf%C3%A9%20Morlaco%2C%20quisiera%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
